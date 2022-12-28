@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="第五人格bp器.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="第五人格bp器" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="第五人格bp器.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="6742528">
+      <assemblyIdentity name="MaterialSkin" version="2.3.1.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ow4bOvbSuLPQK2zVKEknfJyAZsKuVl5oJT1FUcN0ktM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.ValueTuple.dll" size="78992">
+      <assemblyIdentity name="System.ValueTuple" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>1vsNz+4UkKgWgRftG1V1jxHbOEdUF7NmjRn4nctVy90=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="第五人格bp器.exe" size="5556744">
+      <assemblyIdentity name="第五人格bp器" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r9HHiCeN0yjJ+Yc++v+tRUW9T4/vb9uJUSVsKwc2k9k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="pic\bg_FEG.png" size="1826206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9Cpqa3pUqluyj10c0Nu3IexDf27idjyuI51TXH5LltU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\26号守卫26hsw.png" size="30412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GNwNnRXi9F7VGqXCdlT6sD6EaAuQFVdqkFuNxjUtiE0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\爱哭鬼akg.png" size="28077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fERL3D095tXUFo0Drmh/E8j6mmVWAtWzsh9Nn/qlorA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\博士bs.png" size="30633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bHmt7SH/dssehiWiinTYkNyUhTSG2XcGlMWl4vANO4w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\厂长cz.png" size="25777">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lp0iZbUAZQwcO/9uHnvs2TKxiuRIaV1qPtF5FeOf3bg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\雕刻家dkj.png" size="29707">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OyQPzpAMTt7lFkuoiodOBFc/gIG/o4qST+HRe5jUG20=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\噩梦em.png" size="33838">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MKgkMPhq3EGHploQKQ1qN3Cp7GX+4AjfySnS9BCPVCw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\疯眼fy.png" size="33724">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>usrsgT5EJKAwEdzzu3oCii1EBAoQZLx+KzMvT8un+E0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\红蝶hd.png" size="35556">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6uab9yt4A2HGBPh2EFXKxUipUPlxWI5h+ICpG/Dhp6A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\红夫人hfr.png" size="31725">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/0b7GNrGAMyw3lcQGKjYhXbl9c0dggwhywwcUzT3Kaw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\黄衣之主hyzz.png" size="42529">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3R/b3oOaMRfUxsFhdA3UftnN1kr+Qw++j5/gCJve4vE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\杰克jk.png" size="25312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sYr3JlTtLrc7aVucWItq8FS0aBR+MLNliMxLc/rrvvI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\蜡像师lxs.png" size="31919">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CGtBNu8hrZnwD+OLAzDbfc1MBx7VhUXoV3nQfmBuLfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\鹿头lt.png" size="31597">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hRFDBfDk4L7/ib4Gz6177qiaKOmZrR/mXKfOJZDSonU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\梦之女巫mznw.png" size="34902">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Nh6Zy8q3cO4KLfXvFujwkBw4wSFXSM138ETz4Wwa7yY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\孽蜥nx.png" size="29692">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Kx1GtySSFTj+R0pWVD7ATGCccoBe5uEWjMQP1uPniKA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\破轮pl.png" size="32492">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cfmAOJd0actRZWtAcsNQ19YM0q/PGwIOGPcsNDKz+Ek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\摄影师sys.png" size="28057">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mEEGjU0BGpT5Sb7Fsg6uQ1L/MfKt3HKERvB4ylAV4Fs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\使徒st.png" size="21599">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ogxf2s8SAymU5ikp9tsVnXWa+yajTRsx/lC1E35hCZw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\宿伞之魂sszh.png" size="32589">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mUF9TF9/qVWuwDIzejeQ4sTo6gQi+oTmWHfCb28DgQU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\小丑xc.png" size="35865">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c7lQiJ91SE/gWuJDg7/WdEDaVnhaPPSH8x20hp9tzbQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\小提琴家xtqj.png" size="33578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rrkL72r3wSTy6vn/8GBB82cTcuQX+FtCRgQyo0um+ac=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\渔女yn.png" size="29274">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S2RUCBUHVeBoH1urCOowQKnL6VH5IFZVr07agsl2sCU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hun\蜘蛛zz.png" size="32858">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dMt+EzL3Su5hxcFFmai8UzPkpbcxuH2cT6m8ryuNNfo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\26号守卫26hsw.png" size="455511">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jXgSdmkwLolPbEgz6SMPmIRYYIoGa/5r+DR+hQV0pfo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\爱哭鬼akg.png" size="340314">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ei0L96b1ie/ikygEPZ/YrIMjHhXvUTWU/NcK2Uj+9d8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\博士bs.png" size="420154">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jkMit7kpTz2W5BohW8/tMOEd6CY1mxaEt+29edCJjLY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\厂长cz.png" size="402826">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gVAYA1I+rmXBUi2DTHY2TKawan3suyWUOfvw9CMDZjs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\雕刻家dkj.png" size="431264">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P2qhE8uJg3YYddVsqKGFWin9a7aNqh4VJ2CBO5puSfE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\噩梦em.png" size="448845">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mGw9pEIvWiyJPH+Bv7vV+9x+4hhRUsZ29+GvotdYhyc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\疯眼fy.png" size="711904">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GdAL+ge3PFAkgs0V1kH/Y+050omfqmuk3xpi+5c4p0I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\红蝶hd.png" size="643303">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UvIvychWrkQw6mKEY13Ehn+GeIgY/Y2zcCL+X3L29r8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\红夫人hfr.png" size="340097">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AkLT1Z+qdZv/Ej781GWGfgoJ/rSC2GwuThp6Xrv9aEg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\黄衣之主hyzz.png" size="946180">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HZK51TNhFjdORVUoK8nvB0uryvZ2ObXQZNIrVgjUEHE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\杰克jk.png" size="290200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MVk/JhRm/wzY3/cHkUylQoauwTwWPQj1uNc3lyB+3O8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\蜡像师lxs.png" size="378587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WR3xeVg7iIxJaEpM6yoW1ldQMJj2laWMbfdZRKrbhmw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\鹿头lt.png" size="532367">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WjoDXbLa8ZhLQ7GzDlP2lSZBEE4Jm/meB8d1pd94xD0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\梦之女巫mznw.png" size="513874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yfXrm057foLLpmGi5Y1GPh131j4N2qmlPIwJOt0NbZ4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\孽蜥nx.png" size="404639">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l6o3Lkqg3TfHperwLcrJmWGtY7hlGm1+sE+e/oPQN2I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\破轮pl.png" size="387458">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q+TU1ChE4fF3bL3002zApXDwpCP9XFn8xH2rIliWiGo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\摄影师sys.png" size="308177">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>d/sd/ZsP9P9XRLNbXD4DQrMfquVWpgfB5LpCtb2nh+o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\使徒st.png" size="267159">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TxqF8P40nIRCHje3utqfwdjmnNxX3DAjGjViX8lhv+s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\宿伞之魂sszh.png" size="441830">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y6dfwdTuLDR2TC3uhKuud410eYYFQzryDYMp4prdEKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\小丑xc.png" size="515260">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8aoVTkUVC2g4g4ErWEtZqxea/yNfwCbHTqw0tnf6Js0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\小提琴家xtqj.png" size="579868">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sdCfLjjjwVLYfnfQWXSRytcSU5zX7MV5nNeWiUKeNcc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\渔女yn.png" size="307247">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t9R0wjHMgSyYDEkmAQ+F3AJ6fXUlGB/mEiU8IfCnL3o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\hunBig\蜘蛛zz.png" size="401033">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cs2aeykJ3NWmHWV58rGk5Dxd89gFgNje9cw8vrYpffw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\红教堂hjt.png" size="82704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hsbw3f7z8QYeFPq9yUkxwMneDLVj80mgAnQMSaCvaeo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\湖景村hjc.png" size="78539">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A7zfQtkvG2o8Z4Nm2q7ASKcNyYjjivxvHx4OkshSt8k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\军工厂jgc.png" size="71163">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UXeZyj1Sg4cLbpSUJ8cmfdlozrvUtfjcS0ffqLjxkBg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\里奥的回忆ladhy.png" size="82077">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dk4UDUQFCZP81zKXnRmqUT5zvMGoSsjE25ef6b4Q/XM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\圣心医院sxyy.png" size="64920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1MEZ/bdn0uFWU8KHIh54wyIropvlyER74Bft13W75WE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\唐人街trj.png" size="227587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HeILy4rRhHqBssrdSQ4yeaFOvClTToSNBGqsB0T1aJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\永眠镇ymz.png" size="93923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DAscIarzHWixsFT/oji9wo9IixG4n6p8D3uvT2OcuCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\map\月亮河公园ylhgy.png" size="102901">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V6jQx/jTzNKalC7eJvogK6v5cuTFuPSv+3+LJGDd/K0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\病患bh.png" size="28305">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wXNQ5Lk0vLDrQsxF1D4y1QMXXLBapKJkqRJY2iisxxM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\慈善家csj.png" size="27919">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zbCqs9fqsVQVlQBQ1MzMlitGzsjI43TUNDpTQJncIeY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\大副df.png" size="28370">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iALvI9O5k5fGbr3n5U8j564uVPnjfSfPbuyFXRBJIl0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\调酒师tjs.png" size="26345">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rBwRpeOSf3QaHvduIgL1tbfIfwiOno7JbuxOpIVjtIU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\调香师txs.png" size="25652">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CVjWNYwW5EAnKUmlWVAQtvYSKJA2OYxN7DQaC0KVhTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\画家hj.png" size="30402">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BIMC8ehXvn+QZQpXRr2Ygll4dr70igtnG7wFhE7wXQA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\击球手jqs.png" size="24335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ewM/AoqxQivOejJxQYun+sF6qHpXTXdINz0SSMRhOHc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\机械师jxs.png" size="31379">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>x+rqvM2YAe5kNvtB5smGgDUCXDeqofBoos1HIrEmoc8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\祭司js.png" size="27340">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4/tJJOaBKLsstOTDQJKrzHgniB0+5+pOyLDfJ+Ve44k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\勘探员kty.png" size="29319">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OFxGykVfqU1AazltVypE4RM6L4rhi0VaXy2L1fXiVIE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\空军kj.png" size="32486">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nOhIZng4gwmBtVneBy4EKKIaNDDg4Yox92ZF9vfqNRM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\哭泣小丑kqxc.png" size="25489">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Fd02jhwmfLAF+UQDbCk78UUd9gGOqkBop2rqcCOfWjE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\昆虫学者kcxz.png" size="30547">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jzt7Ts89Tjfkm9PpNN+cZWEh6gzJNAY8fQ5FJsF9u1c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\律师ls.png" size="28545">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YbCcvSVDrTxSgVjXtJMQTy/voUSslbONUYTC0FemO2o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\盲女mn.png" size="24675">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>p9o1OAH8BgREQQcggB3DPjV55lIFUOi6zNNEiTScGA4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\冒险家mxj.png" size="26856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pWVxC2iOUwP3tXGzHhdp/XY18465nX3d/v6ct19cDFI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\魔术师mss.png" size="22424">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>etIE58+/ehQB668+11Owr3MtYD9eyF6e0dfhZ28zXIQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\牛仔nz.png" size="26679">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LQw0PaQV41UKSSCYTd91ARdHcDbrW9o8V29kgswxI4M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\前锋qf.png" size="28433">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hqubXUJ5UsBSkibXMhCNuSVa/XzVYnVIeW7dg6qrFYA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\囚徒qt.png" size="27487">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hG2GPZ2TvSASB/0qIoWMaG/Q+xMgqMEtTEQy/qYXTzM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\入殓师rls.png" size="25161">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gqEPeqSexAzKcCV/Cm9zDZXwWxFyjwcQJuxxjDpPiDk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\守墓人smr.png" size="25255">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+j6FhDu28I8G65VIZ2znZZuNBBJFKhcRZ5vKPKCH1a4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\玩具商wjs.png" size="25255">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>435+mHDu/87o19xJoiyewqKSxT0m7F54oWMLOOQwWnw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\舞女wn.png" size="30426">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hO9rYe62hZoDhMehYJr4XuWCpWM9EB3qTKS2bA1+OFw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\先知xz.png" size="24491">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mFzA0l2i3C3n6re5eeILd8lfHJwH7Lkfc3yWcivUN4Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\小女孩xnh.png" size="28992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eUDrk+Awk8SpzJ/2VuGvRt8lu86l9/8LwJCq/zuNTOI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\小说家xsj.png" size="23353">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q08dyKb9qjKWm4DgJeNuMXFKB/79CqpGcN3tykqXC6Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\心理学家xlxj.png" size="27645">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nd2OEXViFdZRiPQLk8VRc4OzA8CjpZ5rwdgJeAQU3OM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\幸运儿xye.png" size="26626">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X75w3ieBI425iW/dT6tEC9/qtn7MCPNk7GQ7fnuYNgI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\野人yr.png" size="26518">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DHscXQhhOwpC07jnqrHR6uOOs/JuiCzaMlcvRecAu20=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\医生ys.png" size="21920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vsCJhxsBHUQCogvPI+rNl4OXiGN5LlOfRYPLat2L0Ao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\佣兵yb.png" size="26838">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OeJgee5eC2mEBOKGNFKYoFV3Ax8/tdrCmgjvhGGE0SY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\邮差yc.png" size="25812">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bcyu6fslv9uMxoHIMLMdwCYMW9AKAcDBvuP/k55+8Dw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\园丁yd.png" size="28527">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dHksvmCkAVTVbF2cIS22gWBOSv8NsoCPIichNZP1Sps=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\杂技演员zjyy.png" size="31629">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PEKk3TM7vEeLxanOuqoPBUgcVNPfuf8Zzk4ZW5SWX30=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pic\sur\咒术师zss.png" size="27477">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oeKohg5QdEqk0a61v12NAqW9geg/EkoBzO+w1JUxlog=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="第五人格bp器.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JF3ByB6ykCqpdwz4FDSGNYH2p/TP28AbodqPiU/9J54=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>

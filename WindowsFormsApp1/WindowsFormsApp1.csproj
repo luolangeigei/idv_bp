@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CF3C7C7-044C-4289-8BA9-3451E24B2208}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>第五人格bp器</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\q\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://124.223.35.239/luolan/idvbp/</UpdateUrl>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E71D0D5141C75BC1A584E1CB36025FA1D8C6109D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApp1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net45\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pic\background.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApp1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b21c8701a18b87d69e3dcf380c0828381f30fd9e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无标题.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\838ba61ea8d3fd1fec489122304e251f95ca5f60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pic\bg_FEG.png" />
+    <Content Include="pic\hunBig\26号守卫26hsw.png" />
+    <Content Include="pic\hunBig\使徒st.png" />
+    <Content Include="pic\hunBig\博士bs.png" />
+    <Content Include="pic\hunBig\厂长cz.png" />
+    <Content Include="pic\hunBig\噩梦em.png" />
+    <Content Include="pic\hunBig\孽蜥nx.png" />
+    <Content Include="pic\hunBig\宿伞之魂sszh.png" />
+    <Content Include="pic\hunBig\小丑xc.png" />
+    <Content Include="pic\hunBig\小提琴家xtqj.png" />
+    <Content Include="pic\hunBig\摄影师sys.png" />
+    <Content Include="pic\hunBig\杰克jk.png" />
+    <Content Include="pic\hunBig\梦之女巫mznw.png" />
+    <Content Include="pic\hunBig\渔女yn.png" />
+    <Content Include="pic\hunBig\爱哭鬼akg.png" />
+    <Content Include="pic\hunBig\疯眼fy.png" />
+    <Content Include="pic\hunBig\破轮pl.png" />
+    <Content Include="pic\hunBig\红夫人hfr.png" />
+    <Content Include="pic\hunBig\红蝶hd.png" />
+    <Content Include="pic\hunBig\蜘蛛zz.png" />
+    <Content Include="pic\hunBig\蜡像师lxs.png" />
+    <Content Include="pic\hunBig\雕刻家dkj.png" />
+    <Content Include="pic\hunBig\鹿头lt.png" />
+    <Content Include="pic\hunBig\黄衣之主hyzz.png" />
+    <Content Include="pic\hun\26号守卫26hsw.png" />
+    <Content Include="pic\hun\使徒st.png" />
+    <Content Include="pic\hun\博士bs.png" />
+    <Content Include="pic\hun\厂长cz.png" />
+    <Content Include="pic\hun\噩梦em.png" />
+    <Content Include="pic\hun\孽蜥nx.png" />
+    <Content Include="pic\hun\宿伞之魂sszh.png" />
+    <Content Include="pic\hun\小丑xc.png" />
+    <Content Include="pic\hun\小提琴家xtqj.png" />
+    <Content Include="pic\hun\摄影师sys.png" />
+    <Content Include="pic\hun\杰克jk.png" />
+    <Content Include="pic\hun\梦之女巫mznw.png" />
+    <Content Include="pic\hun\渔女yn.png" />
+    <Content Include="pic\hun\爱哭鬼akg.png" />
+    <Content Include="pic\hun\疯眼fy.png" />
+    <Content Include="pic\hun\破轮pl.png" />
+    <Content Include="pic\hun\红夫人hfr.png" />
+    <Content Include="pic\hun\红蝶hd.png" />
+    <Content Include="pic\hun\蜘蛛zz.png" />
+    <Content Include="pic\hun\蜡像师lxs.png" />
+    <Content Include="pic\hun\雕刻家dkj.png" />
+    <Content Include="pic\hun\鹿头lt.png" />
+    <Content Include="pic\hun\黄衣之主hyzz.png" />
+    <Content Include="pic\map\军工厂jgc.png" />
+    <Content Include="pic\map\唐人街trj.png" />
+    <Content Include="pic\map\圣心医院sxyy.png" />
+    <Content Include="pic\map\月亮河公园ylhgy.png" />
+    <Content Include="pic\map\永眠镇ymz.png" />
+    <Content Include="pic\map\湖景村hjc.png" />
+    <Content Include="pic\map\红教堂hjt.png" />
+    <Content Include="pic\map\里奥的回忆ladhy.png" />
+    <Content Include="pic\sur\佣兵yb.png" />
+    <Content Include="pic\sur\先知xz.png" />
+    <Content Include="pic\sur\入殓师rls.png" />
+    <Content Include="pic\sur\冒险家mxj.png" />
+    <Content Include="pic\sur\击球手jqs.png" />
+    <Content Include="pic\sur\前锋qf.png" />
+    <Content Include="pic\sur\勘探员kty.png" />
+    <Content Include="pic\sur\医生ys.png" />
+    <Content Include="pic\sur\咒术师zss.png" />
+    <Content Include="pic\sur\哭泣小丑kqxc.png" />
+    <Content Include="pic\sur\囚徒qt.png" />
+    <Content Include="pic\sur\园丁yd.png" />
+    <Content Include="pic\sur\大副df.png" />
+    <Content Include="pic\sur\守墓人smr.png" />
+    <Content Include="pic\sur\小女孩xnh.png" />
+    <Content Include="pic\sur\小说家xsj.png" />
+    <Content Include="pic\sur\幸运儿xye.png" />
+    <Content Include="pic\sur\律师ls.png" />
+    <Content Include="pic\sur\心理学家xlxj.png" />
+    <Content Include="pic\sur\慈善家csj.png" />
+    <Content Include="pic\sur\昆虫学者kcxz.png" />
+    <Content Include="pic\sur\机械师jxs.png" />
+    <Content Include="pic\sur\杂技演员zjyy.png" />
+    <Content Include="pic\sur\牛仔nz.png" />
+    <Content Include="pic\sur\玩具商wjs.png" />
+    <Content Include="pic\sur\画家hj.png" />
+    <Content Include="pic\sur\病患bh.png" />
+    <Content Include="pic\sur\盲女mn.png" />
+    <Content Include="pic\sur\祭司js.png" />
+    <Content Include="pic\sur\空军kj.png" />
+    <Content Include="pic\sur\舞女wn.png" />
+    <Content Include="pic\sur\调酒师tjs.png" />
+    <Content Include="pic\sur\调香师txs.png" />
+    <Content Include="pic\sur\邮差yc.png" />
+    <Content Include="pic\sur\野人yr.png" />
+    <Content Include="pic\sur\魔术师mss.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
